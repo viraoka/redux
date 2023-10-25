@@ -4,7 +4,7 @@ import { decrement, increment, incrementByAmount, decrementByAmount, multiplyByA
 
 function App() {
 
-  const { count } = useSelector((state) => state.apple);
+  const count   = useSelector((state) => state.counter.count);
   const dispatch = useDispatch()
 
 
