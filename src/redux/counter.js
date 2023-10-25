@@ -23,10 +23,13 @@ export const counterSlice = createSlice({
     multiplyByAmount: (state, action) => {
         state.count *= action.payload;
     },
+    dividedbyByAmount: (state, action) => {
+        state.count /= action.payload;
+    },
 }
 })
 
 
-export const { increment, decrement, incrementByAmount, decrementByAmount, multiplyByAmount } = counterSlice.actions
+export const { increment, decrement, incrementByAmount, decrementByAmount, multiplyByAmount, dividedbyByAmount } = counterSlice.actions
 
 export default counterSlice.reducer
